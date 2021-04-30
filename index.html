@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./index.js"></script>
+    <title>Snapping system</title>
+    <style>
+        body {margin: 0;}
+        #uno {height: 100vh; background-color: gray; position: relative;}
+        #dos {height: 100vh; background-color: gray; position: relative;}
+        #elem-one{width:5vw; height:5vw; position: absolute; box-sizing: content-box; background-color: rgb(88, 49, 49); top:100px; left:100px}
+        #elem-two{width:10vw; height:5vw; position: absolute; box-sizing: content-box; background-color: rgb(43, 87, 128); top:300px; left:800px}
+        #elem-three{width:10vw; height:25vw; position: absolute; box-sizing: content-box; background-color: rgb(62, 46, 104); top:300px; left:200px}
+        #elem-four{width:15vw; height:10vw; position: absolute; box-sizing: content-box; background-color: rgb(117, 64, 29); top:100px; left:200px}
+        #elem-five{width:25vw; height:15vw; position: absolute; box-sizing: content-box; background-color: rgb(38, 102, 38); top:200px; left:400px}
+        #elem-six{width:5vw; height:5vw; position: absolute; box-sizing: content-box; background-color: rgb(141, 151, 48); top:500px; left:500px}    
+        #values {position: fixed; bottom:2vw; right:2vw; padding: 2vw; background-color: rgba(0,0,0,0.6);}      
+        #values .show span {color:#fff; font-family:monospace; user-select: none;}
+    </style>
+</head>
+<body id="main">
+        <div id="elem-one" class="mov"></div>
+        <div id="elem-two" class="mov"></div> 
+        <div id="elem-three" class="mov"></div> 
+        <div id="elem-four" class="mov"></div> 
+        <div id="elem-five" class="mov"></div>
+        <div id="elem-six" class="mov"></div> 
+        <div id="values">
+            <div class="show"><span>Elem id :</span><span id="show-id"></span></div>
+            <div class="show"><span>Top :</span><span id="show-top"></span></div>
+            <div class="show"><span>Left :</span><span id="show-left"></span></div>
+            <div class="show"><span>State :</span><span id="show-state"></span></div>
+        </div>   
+</body>
+</html>
