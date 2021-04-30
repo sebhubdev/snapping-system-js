@@ -14,5 +14,6 @@ magnet [Boolean] Default true
 linesColor [string] Default orange
 centerLinesColor [string] Default orange
 
-import Snap from './snap.js';\n
+
+import Snap from './snap.js';
 new Snap(container,selector,callback,{options});
