@@ -49,9 +49,9 @@ class Snap
             this.createLines(container);
         }
         moveElement=(evt,elem)=>
-        {
-            let top,left,difx,dify,coords;
-            coords=elem.getBoundingClientRect();
+        {            
+            evt.stopPropagation();
+            let top,left,difx,dify;
             difx=evt.clientX-elem.offsetLeft;
             dify=evt.clientY-elem.offsetTop;
             const handleMove=(evt)=>{   
@@ -68,8 +68,8 @@ class Snap
               document.removeEventListener('mouseup',stopMove,true);
               this.stopSnapDetect(elem);
             }
-            document.addEventListener('mouseup',stopMove,true);
             document.addEventListener('mousemove',handleMove,true);
+            document.addEventListener('mouseup',stopMove,true);
         }
         createLines=(container)=>
         {

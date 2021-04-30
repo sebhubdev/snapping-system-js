@@ -1,4 +1,4 @@
-import Snap from './modules/snap.js';
+import Snap from './snap.js';
 
 // Arguments -->
 // container [string] Default body
